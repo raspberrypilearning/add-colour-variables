@@ -1,59 +1,70 @@
-## Introduction
+You can create additional variables in `default.css` to store more colours.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+**Tip:** You might want to add a new background colour **and** a new text colour to use with it.
 
-### What you will make
-
---- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: html
+filename: default.css
+line_numbers: true
+line_number_start: 4
+line_highlights: 15-16
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+:root {
+  --primary: #08586B;
+  --onprimary:#4f4e4e;
+  --secondary: #E0DB54;
+  --onsecondary:#ffffff;
+  --tertiary:#AF5C08;
+  --ontertiary: #ffffff;
+  --page:#ffffff;
+  --onpage:#000000;
+  --detail: #AB7C1C;
+  --detail2: #38640D;
+  --highlight: #DC9110;
+  --onhighlight: #443C35;
+}
 
---- /collapse ---
+--- /code ---
 
---- collapse ---
+You can create a class in `style.css` that uses your new colours: 
+
+--- code ---
 ---
-title: Additional information for educators
+language: html
+filename: style.css
+line_numbers: true
+line_number_start: 8
+line_highlights: 18-21
 ---
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+.secondary {
+  background: var(--secondary);
+  color: var(--onsecondary);
+}
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+.tertiary {
+  background: var(--tertiary);
+  color: var(--ontertiary);
+}
 
---- /collapse ---
+.highlight {
+  background: var(--highlight);
+  color: var(--onhighlight);
+}
+
+--- /code ---
+
+Your new class can then be used in your `index.html` file at any time so that an element can use your new colour pairing. 
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: false
+---
+
+<section class="highlight">
+
+--- /code ---
