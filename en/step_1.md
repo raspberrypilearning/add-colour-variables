@@ -28,7 +28,7 @@ line_highlights: 15-16
 
 --- /code ---
 
-You can create a class in `style.css` that uses your new colours: 
+You can create a class in `style.css` that uses your new colours. 
 
 --- code ---
 ---
