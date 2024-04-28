@@ -1,6 +1,6 @@
-You can create additional variables in `default.css` to store more colours.
+Je kunt extra variabelen maken in `default.css` om meer kleuren op te slaan.
 
-**Tip:** You might want to add a new background colour **and** a new text colour to use with it.
+**Tip:** Je wilt misschien een nieuwe achtergrondkleur **en** een nieuwe tekstkleur toevoegen.
 
 ## --- code ---
 
@@ -28,7 +28,7 @@ line_highlights: 15-16
 
 \--- /code ---
 
-You can create a class in `style.css` that uses your new colours.
+Je kunt een class maken in `style.css` die je nieuwe kleuren gebruikt.
 
 ## --- code ---
 
@@ -56,7 +56,7 @@ color: var(--onhighlight);
 
 \--- /code ---
 
-Your new class can then be used in your `index.html` file at any time so that an element can use your new colour pairing.
+Je nieuwe class kan dan op elk moment in je `index.html` bestand gebruikt worden, zodat een element je nieuwe kleur kan gebruiken.
 
 ## --- code ---
 
