@@ -1,6 +1,6 @@
-You can create additional variables in `default.css` to store more colours.
+你可以在 `default.css` 中创建更多变量来存储更多颜色。
 
-**Tip:** You might want to add a new background colour **and** a new text colour to use with it.
+**提示：** 你可能想要添加一个新的背景颜色 **和** 一个新的文本颜色。
 
 ## --- code ---
 
@@ -28,7 +28,7 @@ line_highlights: 15-16
 
 \--- /code ---
 
-You can create a class in `style.css` that uses your new colours.
+你可以在 `style.css` 中创建一个使用新颜色的类。
 
 ## --- code ---
 
@@ -56,7 +56,7 @@ color: var(--onhighlight);
 
 \--- /code ---
 
-Your new class can then be used in your `index.html` file at any time so that an element can use your new colour pairing.
+然后，你随时可以在你的 `index.html` 文件中使用新类，以便元素可以使用你新配对颜色。
 
 ## --- code ---
 
